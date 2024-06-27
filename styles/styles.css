@@ -7,7 +7,6 @@ aside{
     border: 1px solid rgba(0, 0, 0, 0.2); /**/ 
     padding: 1rem;
     background-color: #eee;
-    color: #333;
 }
 
 aside img{
@@ -49,12 +48,11 @@ aside {
 }
       
 main img {
-    /* you most likely will have other declarations here */
     float: right;
 }
 
 aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
+  position: relative;
+  top: 30px;
+  left: 0px;
 }
