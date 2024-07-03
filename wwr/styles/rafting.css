@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #FF6347;
+    --background-color: #f0f0f0;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+
+.client-img {
+    float: right;
+    margin-left: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+footer a img {
+    height: 30px;
+    margin: 0 0.5rem;
+}
+
+footer a {
+    text-decoration: none;
+}
