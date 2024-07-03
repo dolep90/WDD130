@@ -52,27 +52,31 @@ nav a {
 .hero img {
     width: 100%;
     display: block;
+    filter: brightness(0.7);
 }
 
 .hero h1 {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 35%;
 }
 
 article {
     position: absolute;
-    bottom: 20%;
-    left: 50%;
+    bottom:35%;
+    left: 47%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+    padding: 2rem, 0, 0, 0;
+    border-radius: 8px;
 }
 
 .client-img {
     float: right;
     margin-left: 1rem;
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px; 
 }
 
 footer {
