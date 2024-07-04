@@ -54,10 +54,9 @@ aside h2 {
   left: 120px;
 }
 
-header, footer, .grid {
-  margin: 0 auto;
+header, footer,.grid {
   max-width: 840px;
-  
+  margin: 0 auto;
 }
 
 nav {
