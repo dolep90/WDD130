@@ -15,9 +15,15 @@
     --nav-hover-background-color: rgb(241, 132, 8);
 }
 
+header img {
+    mix-blend-mode: multiply;
+    width: 80px;
+   
+}
+
 body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
+    font-family: var(--heading-font);
+    background-color: #f0f0f0;
     color: var(--primary-color);
     margin: 0;
     padding: 0;
@@ -26,8 +32,8 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
     background-color: var(--secondary-color);
@@ -35,6 +41,11 @@ header {
 
 header img {
     height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -52,7 +63,7 @@ nav a {
 .hero img {
     width: 100%;
     display: block;
-    filter: brightness(0.7);
+    filter: brightness(0.9);
 }
 
 .hero h1 {
@@ -63,7 +74,7 @@ nav a {
 
 article {
     position: absolute;
-    bottom:35%;
+    bottom:30%;
     left: 47%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
@@ -79,8 +90,70 @@ article {
     border-radius: 4px; 
 }
 
-footer {
+.history-section {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.history-section h2 {
+    position: absolute;
+    top:160%;
+    left: 45%;
+}
+
+.history-section img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 5px; 
+}
+
+.history-section p {
+    margin-right: 100px;
+    float: left;
+    margin-top: 13%;
+}
+
+.adventures-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.9rem;
+    padding: 2rem;
+}
+
+.adventures-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0.2rem;
+    background-color: rgb(170, 30, 30);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.adventures-section img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures-section figcaption {
     text-align: center;
+    font-size: 1rem;
+    margin-top: 0.1rem;
+    color: #ffffff;
+}
+
+.adventures-section h2 {
+    position: absolute;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     background-color: var(--secondary-color);
     color: white;
@@ -94,3 +167,9 @@ footer a img {
 footer a {
     text-decoration: none;
 }
+
+.footer-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
