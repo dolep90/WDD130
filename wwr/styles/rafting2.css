@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: rgba(20, 20, 180, 0.763);
+    --secondary-color: rgb(170, 30, 30);
+    --accent1-color: rgb(197, 197, 13);
+    --accent2-color: green;
+
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto', serif;
+
+    --nav-background-color: rgb(48, 133, 244);
+    --nav-link-color: rgb(254, 136, 136);
+    --nav-hover-link-color: rgb(91, 250, 91);
+    --nav-hover-background-color: rgb(241, 132, 8);
+}
+
+header img {
+    mix-blend-mode: multiply;
+    width: 80px;
+   
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: #f0f0f0;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    filter: brightness(0.7);
+    border-radius: 10px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.hero article {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.intro {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.intro h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.highlights h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 194%;
+    left: 50%;
+    color: var(--secondary-color);
+}
+
+.trip-highlight {
+    background-color: var(--secondary-color);
+    border: 1px solid #030303;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 20%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.trip-highlight img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.trip-highlight h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.testimonials h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.testimonial {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    font-style: italic;
+}
+#trips h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.trip {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trip h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.trip p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.trip ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trip ul li {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer .social-links a img {
+    height: 30px;
+    margin: 0 0.5rem;
+}
