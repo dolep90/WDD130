@@ -116,13 +116,13 @@ main {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .highlights h2{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 194%;
+    top: 192%;
     left: 50%;
     color: var(--secondary-color);
 }
